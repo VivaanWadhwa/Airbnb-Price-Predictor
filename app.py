@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import SubmitField, StringField, SelectField
 import joblib
 import sklearn
-
+import pandas
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'XeAftU_78Fa67*lpUav'
@@ -117,4 +117,4 @@ def prediction():
     return render_template('prediction.html', results=results)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

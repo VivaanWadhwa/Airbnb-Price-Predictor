@@ -13,3 +13,4 @@ scipy
 Werkzeug
 WTForms
 lightgbm
+pandas
