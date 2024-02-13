@@ -3,7 +3,6 @@ from flask_wtf import FlaskForm
 from wtforms import SubmitField, StringField, SelectField
 import joblib
 import sklearn
-import pandas
 
 
 app = Flask(__name__)
