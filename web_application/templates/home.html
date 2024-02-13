@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Price Prediction</h1>
+        <form method="POST" action="/">
+            {{ form.hidden_tag() }}
+            {{ form.minimum_nights.label }} {{ form.minimum_nights(size=32) }}
+            {{ form.number_of_reviews.label }} {{ form.number_of_reviews(size=32) }}
+            {{ form.calculated_host_listings_count.label }} {{ form.calculated_host_listings_count(size=32) }}
+            {{ form.availability_365.label }} {{ form.availability_365(size=32) }}
+            {{ form.neighbourhood_group.label }} {{ form.neighbourhood_group() }}
+            {{ form.room_type.label }} {{ form.room_type() }}
+            {{ form.neighbourhood.label }} {{ form.neighbourhood() }}
+            {{ form.submit() }}
+        </form>
+    </div>
+</body>
+</html>
+
